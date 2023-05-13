@@ -42,6 +42,20 @@
 //   });
 // });
 
+// Get the .content element
+var contentElement = document.querySelector('.content');
 
+// Function to handle resizing and update the CSS
+function handleResize() {
+  if (window.innerWidth <= 600) {
+    contentElement.style.display = 'block';
+  } else {
+    contentElement.style.display = 'flex';
+  }
+}
 
-  
+// Initial call to handleResize function
+handleResize();
+
+// Event listener for window resize
+window.addEventListener('resize', handleResize);
