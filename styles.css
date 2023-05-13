@@ -103,17 +103,19 @@ body {
     margin-right: 20px;        
   }  
 
-  @media (max-width: 600px) {
+/*@media (max-width: 600px) {
     .left-panel,
     .right-panel {
-      /* Hide both div classes */
+      /* Hide both div classes
       display: none;
     }
 
     .merged-class {
       /* Add styles for merged class */
-      /* e.g., to stack the divs vertically */
+      /* e.g., to stack the divs vertically
       display: block;
-      /* Additional styles as needed */
+      /* Additional styles as needed
     }
   }
+   */
+  
