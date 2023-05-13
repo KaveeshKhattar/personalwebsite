@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">    
-    <script type="text/javascript" src="scripts.js"></script>
+    <!--script type="text/javascript" src="scripts.js"></script-->
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,38 +115,27 @@
         </div>
       </div>
 
-      <!--script>
+      <script>
         document.addEventListener('DOMContentLoaded', function() {
-          var divClass1 = document.querySelector('.left-panel');
-          var divClass2 = document.querySelector('.right-panel');
-          var mergedClass = document.createElement('div');
-          mergedClass.classList.add('merged-class');
-    
-          function mergeDivs() {
-            if (window.innerWidth <= 600) {
-              if (!document.contains(mergedClass)) {
-                var parent = divClass1.parentNode;
-                parent.insertBefore(mergedClass, divClass1.nextSibling);
-              }
-              if (!mergedClass.contains(divClass1)) {
-                mergedClass.appendChild(divClass1);
-              }
-              if (!mergedClass.contains(divClass2)) {
-                mergedClass.appendChild(divClass2);
-              }
-            } else {
-              var parent = mergedClass.parentNode;
-              parent.insertBefore(divClass1, mergedClass);
-              parent.insertBefore(divClass2, mergedClass);
-              parent.removeChild(mergedClass);
-            }
-          }
-    
-          mergeDivs();
-    
-          window.addEventListener('resize', mergeDivs);
-        });
-      </script-->
+  var contentElement = document.querySelector('.content');
+
+  // Function to handle resizing and update the CSS
+  function handleResize() {
+    if (window.innerWidth <= 600) {
+      contentElement.style.display = 'block';
+    } else {
+      contentElement.style.display = 'flex';
+    }
+  }
+
+  // Initial call to handleResize function
+  handleResize();
+
+  // Event listener for window resize
+  window.addEventListener('resize', handleResize);
+});
+
+      </script>
          
 </body>
 </html>

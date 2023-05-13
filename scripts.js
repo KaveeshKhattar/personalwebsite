@@ -42,6 +42,41 @@
 //   });
 // });
 
+
+// <!--script>
+        
+//         document.addEventListener('DOMContentLoaded', function() {
+//           var divClass1 = document.querySelector('.left-panel');
+//           var divClass2 = document.querySelector('.right-panel');
+//           var mergedClass = document.createElement('div');
+//           mergedClass.classList.add('merged-class');
+    
+//           function mergeDivs() {
+//             if (window.innerWidth <= 600) {
+//               if (!document.contains(mergedClass)) {
+//                 var parent = divClass1.parentNode;
+//                 parent.insertBefore(mergedClass, divClass1.nextSibling);
+//               }
+//               if (!mergedClass.contains(divClass1)) {
+//                 mergedClass.appendChild(divClass1);
+//               }
+//               if (!mergedClass.contains(divClass2)) {
+//                 mergedClass.appendChild(divClass2);
+//               }
+//             } else {
+//               var parent = mergedClass.parentNode;
+//               parent.insertBefore(divClass1, mergedClass);
+//               parent.insertBefore(divClass2, mergedClass);
+//               parent.removeChild(mergedClass);
+//             }
+//           }
+    
+//           mergeDivs();
+    
+//           window.addEventListener('resize', mergeDivs);
+//         });
+//       </script-->
+
 // Get the .content element
 var contentElement = document.querySelector('.content');
 
