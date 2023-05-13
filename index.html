@@ -116,12 +116,12 @@
       </div>
 
       <script>
-        window.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
           var divClass1 = document.querySelector('.left-panel');
           var divClass2 = document.querySelector('.right-panel');
           var mergedClass = document.createElement('div');
           mergedClass.classList.add('merged-class');
-      
+    
           function mergeDivs() {
             if (window.innerWidth <= 600) {
               if (!document.contains(mergedClass)) {
@@ -141,12 +141,10 @@
               parent.removeChild(mergedClass);
             }
           }
-      
+    
           mergeDivs();
-      
-          window.addEventListener('resize', function() {
-            mergeDivs();
-          });
+    
+          window.addEventListener('resize', mergeDivs);
         });
       </script>
          
