@@ -41,3 +41,35 @@ links.forEach(link => {
     }
   });
 });
+
+
+
+  window.addEventListener('DOMContentLoaded', function() {
+    var divClass1 = document.querySelector('.div-class1');
+    var divClass2 = document.querySelector('.div-class2');
+    var mergedClass = document.createElement('div');
+    mergedClass.classList.add('merged-class');
+
+    function mergeDivs() {
+      if (window.innerWidth <= 600) {
+        if (!document.contains(mergedClass)) {
+          var parent = divClass1.parentNode;
+          parent.insertBefore(mergedClass, divClass1.nextSibling);
+        }
+        mergedClass.appendChild(divClass1);
+        mergedClass.appendChild(divClass2);
+      } else {
+        var parent = mergedClass.parentNode;
+        parent.insertBefore(divClass1, mergedClass);
+        parent.insertBefore(divClass2, mergedClass);
+        parent.removeChild(mergedClass);
+      }
+    }
+
+    mergeDivs();
+
+    window.addEventListener('resize', function() {
+      mergeDivs();
+    });
+  });
+

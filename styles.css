@@ -95,25 +95,6 @@ body {
     text-decoration: none;    
   }
 
-
-  .card {    
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    margin: 10px 10px 0px 10px;    
-    padding: 10px;
-  }
-
-  .card-content {
-    padding: 20px;
-  }
-
-  .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    
-  }
   
   
   ul {
@@ -121,9 +102,25 @@ body {
     text-justify: inter-word;
     margin-right: 20px;        
   }  
+  
   @media (max-width: 600px) {
     .left-panel,
     .right-panel {      
       display: block;      
+    }
+  }
+
+  @media (max-width: 600px) {
+    .left-panel,
+    .right-panel {
+      /* Hide both div classes */
+      display: none;
+    }
+
+    .merged-class {
+      /* Add styles for merged class */
+      /* e.g., to stack the divs vertically */
+      display: block;
+      /* Additional styles as needed */
     }
   }
