@@ -102,13 +102,6 @@ body {
     text-justify: inter-word;
     margin-right: 20px;        
   }  
-  
-  @media (max-width: 600px) {
-    .left-panel,
-    .right-panel {      
-      display: block;      
-    }
-  }
 
   @media (max-width: 600px) {
     .left-panel,
