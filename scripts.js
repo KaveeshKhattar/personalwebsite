@@ -50,7 +50,7 @@ var contentElement = document.querySelector('.content');
 
 // Function to handle resizing and update the CSS
 function handleResize() {
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 1325) {
     contentElement.style.display = 'block';
   } else {
     contentElement.style.display = 'flex';
