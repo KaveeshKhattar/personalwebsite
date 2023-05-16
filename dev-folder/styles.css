@@ -1,0 +1,82 @@
+*{
+    font-family: "Prompt", sans-serif;
+}
+
+nav{
+    /* border: 2px solid black; */    
+    border: 0px;
+}
+
+nav h2{
+    margin-left: 75px;
+    width: 10px;    
+}
+
+.aboutMe{
+    /* border: 2px solid black; */
+    height: 600px;   
+    display: flex; 
+}
+
+img{
+    /* border: 2px solid black; */
+    height: 700px;
+    margin: 25px 0px 0px 250px;
+    
+}
+
+.aboutMeHeading{
+    margin: 100px 0px 0px -60px;
+    padding-left: 10px;
+    font-size: x-large;
+    max-width: 300px;
+    max-height: 125px;
+    /* border: 2px solid black; */
+    background-color: black;
+    color: white;
+}
+
+.aboutMeDescription{
+    margin: 250px 0px 0px -225px;
+    font-size: larger;
+    max-width: 300px;
+}
+
+.socials{
+    margin: 450px 0px 0px -300px;
+    max-height: 100px;    
+    /* border: 2px solid black; */
+}
+
+.socials a img{    
+    margin: 5px;
+    height: 30px;
+    /* border: 2px solid black; */
+}
+
+.experiencesContent{
+    display: flex;
+}
+
+.experiences h2{    
+    margin-top: 200px;
+    padding-left: 650px;
+    /* border: 2px solid black;         */
+}
+
+.card{
+    height: 400px;
+    width: 400px;
+    /* border: 2px solid black;     */
+    margin-left: 75px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cardHeading{
+    padding-left: 10px;    
+}
+
+.cardContent{
+    margin: 0px 5px 0px 5px;
+}
