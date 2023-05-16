@@ -67,7 +67,7 @@ img{
 .card{
     height: 400px;
     width: 400px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-left: 75px;
     
 }
@@ -77,5 +77,5 @@ img{
 }
 
 .cardContent{
-    padding: 5px;
+    padding: 5px;    
 }
