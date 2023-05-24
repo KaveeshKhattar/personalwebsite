@@ -185,8 +185,13 @@
     }    
     
     .text-intro{
-        margin-left: 5%;        
+        margin-left: 5%;
     }
+
+    .img-plus-text img{
+      height: 50px;
+      margin-right: 10px;      
+  }
 
     .text-intro-mobile{
         margin-left: 5%;        
@@ -238,6 +243,11 @@
     .text-intro{
         margin-left: 5%;        
     }    
+
+    .company img {
+      height: 50px;
+      margin-right: 10px;
+  }
 
     .socials{
         display: flex;
