@@ -9,8 +9,8 @@
     color: var(--text-colour);
   }  
 
-  .header, .experiences, .projects, .education{
-    /* animation: slide 2s; */
+  .header, .experiences, .projects, .education, .text-intro-mobile{
+    animation: slide 2s;
   }
   
   @keyframes slide{
@@ -109,7 +109,7 @@
 
   .company a{
     text-decoration: underline;
-    color: inherit;    
+    color: blue;    
   }
 
   .company img{    
@@ -119,6 +119,7 @@
   .company button{
     font: inherit;
     text-decoration: underline;
+    color: blue;
   }
 
   .companyRole{
