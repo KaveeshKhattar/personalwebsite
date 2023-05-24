@@ -222,7 +222,11 @@
     }
 
     .companyRole{
-      font-size: large;
+      font-size: medium;
+    }
+
+    .companyName{
+      font-size: small;
     }
 
     .projects{        
