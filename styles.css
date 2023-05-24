@@ -109,7 +109,12 @@
 
   .company a{
     text-decoration: underline;
-    color: blue;    
+    color: var(--link-color);
+  }
+
+  #resume{
+    text-decoration: underline;
+    color: var(--text-colour);    
   }
 
   .company img{    
@@ -119,7 +124,7 @@
   .company button{
     font: inherit;
     text-decoration: underline;
-    color: blue;
+    color: var(--link-color);
   }
 
   .companyRole{
@@ -300,11 +305,12 @@
     --text-colour: black;
     --bkg-colour: white;
     --text-colour-gray: gray;
+    --link-color: blue;
   }
 
   .dark-mode{
     --text-colour: white;
     --bkg-colour: black;
-
     --text-colour-gray: gray;
+    --link-color: lightblue;
   }
