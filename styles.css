@@ -1,120 +1,18 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0;    
     font-family: "Prompt", sans-serif;
-    /* transition: background-color 0.4s ease, color 0.3s ease; */
-  }  
-
-  .sun {
-    background-image: url("imgs/sun.png");
-  }
-
-  .moon {
-    background-image: url("imgs/moon.png");
-  }
-
-  .page {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .menu{
-    background-color: var(--bkg-colour);
-    color: var(--text-colour);
-    display: flex;
-    justify-content: space-between;
-  }
-
-  button{
-    height: fit-content;
-    background-color: inherit;
-    border: none;
-    font-size: large;
-    cursor: pointer;
-  }
-
-  .header,
-  .feature-0,
-  .feature-1,
-  .feature-2,
-  .feature-3,
-  .feature-4,
-  .feature-5,
-  .feature-6 {
-    animation: slide 2s;
-  }
-
-  .header .text-content{
-    animation: slideHor 2s;
-  }
-  
-  #self-img{
-    margin: 10px;
-    height:100%;    
-  }
+  } 
 
   body{
     background-color: var(--bkg-colour);
+    color: var(--text-colour);
+  }  
+
+  .header, .experiences, .projects, .education{
+    /* animation: slide 2s; */
   }
   
-  ul{
-    margin: 0px 30px 0px;
-  }
-
-  .section {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    padding: 30px;
-  }   
-  
-  .menu{
-    height: 80px;
-  }
-
-  .content{
-    height: 600px;
-  }
-
-  .content {
-    background-color: lightgray;
-    height: 600px;
-  }        
-  
-  .feature-0{
-    background-color: lightgray;
-  }
-
-  .feature-1 {
-    background-color: #d4d2f9;
-  }
-  
-  .feature-2 {
-    background-color: #C1E1C1;
-  }
-  
-  .feature-3 {
-    background-color: #F5E3CA;
-  }
-
-
-  .feature-4 {
-    background-color: #d4d2f9;
-  }
-  
-  .feature-5 {
-    background-color: #C1E1C1;
-  }
-  
-  .feature-6 {
-    background-color: #F5E3CA;
-  }
-
-  .sign-up {
-    background-color: lightgray;
-  }
-
   @keyframes slide{
     from{
       transform: translateY(200px);
@@ -125,151 +23,277 @@
     }
   }
 
-  @keyframes slideHor{
-    from{
-      transform: translateX(200px);
-    }
-    
-    to{
-      transform: translateX(0px);
-    }
+  .navbar{    
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 2%;
+    padding-top: 10px;
   }
 
+  button{
+    font-size: large;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .all-info{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .header{
+    /* border: 10px solid yellow; */
+    display: flex;
+    width: fit-content;
+    margin-top: 10%;    
+  }
+
+  .header img{
+    margin-right: 2%;
+    margin-bottom: 10%;
+  }
+
+  .text-intro{
+    /* border: 10px solid black; */
+  }
+
+  /* .text-intro .builder{    
+    font-style: italic;
+  } */
+
+  .text-intro button{
+    padding: 5px;
+    margin-top: -10px;
+    border: 2px solid var(--text-colour);
+    color: var(--text-colour);
+  }
+
+  .text-intro-mobile button{
+    padding: 5px;
+    margin-top: -10px;
+    border: 2px solid black;
+  }
+
+  .socials{
+    display: flex;
+    padding-top: 10%;    
+    /* border: 2px solid black;     */
+  }
+
+  .socials img{    
+    margin-right: 10px;
+  }
+  
+  .experiences{
+    /* border: 2px solid black;     */
+    margin-bottom: 6%;
+  }  
+
+  .experiences > h3{
+    color: gray;
+  }
+
+  .company{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;    
+    margin: 0 auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .company a{
+    text-decoration: underline;
+    color: inherit;    
+  }
+
+  .company img{    
+    border-radius: 10%;        
+  }
+
+  .company button{
+    font: inherit;
+    text-decoration: underline;
+  }
+
+  .companyRole{
+
+  }
+
+  .companyName{
+    color: gray;
+  }
+
+  .img-plus-text{
+    /* border: 2px solid yellow; */
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .info-company{
+    /* border: 2px solid black; */
+    margin-left: 5px;
+  }
+
+  .duration{
+    font-size: small;
+  }
+  
+  .projects > h3{
+    color: gray;
+  }
+
+  .projects{
+    /* border: 2px solid black; */
+    margin-bottom: 6%;
+  }
+
+  .education{
+    /* border: 2px solid black; */
+    margin-bottom: 5%;
+  }
+
+  .education > h3{
+    color: gray;
+  }
 
 
   /* Mobile Styles */
-@media only screen and (max-width: 469px) {
-    /* body {
-      background-color: #F09A9D;
-    } */
-    .header{
-      height: 400px;
+  @media only screen and (max-width: 445px) {
+    body {
+      /* background-color: #F09A9D; */
     }
-
-    .header{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .header .text-content{
-      display: none;
-    }
-
-    .feature-0 h3{
-      padding: 30px;
-    }
+    .text-intro{
+        display: none;
+    }        
     
-    .feature-0,
-    .feature-1,
-    .feature-2,
-    .feature-3,
-    .feature-4,
-    .feature-5,
-    .feature-6 {
-      height: auto;
-      margin: 30px;
-    } 
-    .sign-up{
-      height: fit-content;
+    .navbar{
+        margin-left: 5%;
+        margin-right: 5%;
     }    
+
+    .header img{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    
+    .text-intro{
+        margin-left: 5%;        
+    }
+
+    .text-intro-mobile{
+        margin-left: 5%;        
+    }
+
+    .socials{
+        display: flex;
+        padding-top: 10%;    
+        /* border: 2px solid black;     */
+      }
+    
+      .socials img{    
+        margin-right: 10px;
+      }
+
+    .experiences{        
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .projects{        
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .education{        
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
   }
   
   /* Tablet Styles */
-  @media only screen and (min-width: 470px) and (max-width: 960px) {
-    /* body {
-      background-color: #F5CF8E;
-    }     */
-  .feature-0{
-    display: none;
-  }
-  .feature-1,
-  .feature-2,
-  .feature-3,
-  .feature-4,
-  .feature-5,
-  .feature-6 {
-    width: 45%;
-    height: auto;
-    /* border-bottom: 2px solid black; */
-    margin: 2.5%;
-  }
+  @media only screen and (min-width: 446px) and (max-width: 960px) {
+    body {
+      /* background-color: #F5CF8E; */
+    }    
 
-  .header .text-content {
-    margin-top: 40px;
-    max-width: 768px;
-    background-color: var(--text-content-black-box);
-    color: white;
-    height: fit-content;
-    padding: 20px;
-  }           
-  
+    .navbar{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+
+    .header img{                
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    
+    .text-intro{
+        margin-left: 5%;        
+    }    
+
+    .socials{
+        display: flex;
+        padding-top: 10%;    
+        /* border: 2px solid black;     */
+      }
+    
+      .socials img{    
+        margin-right: 10px;
+      }
+
+    .experiences{        
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .projects{        
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .education{        
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text-intro-mobile{
+        display: none;
+    }
   }
   
   /* Desktop Styles */
   @media only screen and (min-width: 961px) {
-    /* body {
-      background-color: #F5E3CA; 
-    } */
-    .feature-0{
-      display: none;
-    }
-    .page {
-        width: 100%;
-        margin: 0 auto;
-      }
-      .feature-1,
-      .feature-2,
-      .feature-3,
-      .feature-4,
-      .feature-5,
-      .feature-6 {
-        width: 45%;
-        height: 350px;
-        align-items: baseline;
-        padding: 10px;
-        /* border-bottom: 2px solid black;         */
-        margin-bottom: 10px;
-        margin: 2.5%;
-      }
-      
-      .header {
-        height: 500px;
-        justify-content: center;
-        align-items: center;
-      }   
-      .header #self-img {
-        margin-left: 10px;        
-      }
-      .header .text-content {
-        margin-top: -265px;
-        max-width: 325px;
-        margin-left: -60px;
-        
-        background-color: var(--text-content-black-box);
-        color: white;
-        height: fit-content;
-        padding: 20px;
-      }             
-      
-      .menu{
-        height: 80px;
-      }
-    
-      .content{
-        height: 600px;
-      }
+    body {
+      /* background-color: #B2D6FF; */
     }
 
-    :root{
-      --text-colour: black;
-      --bkg-colour: white;
-      --text-content-black-box: black;
+    .company img {
+        height: 50px;
+        margin-right: 10px;
     }
 
-    .dark-mode{
-      --text-colour: white;
-      --bkg-colour: black;
-
-      --text-content-black-box: #545454;
+    .text-intro-mobile{
+        display: none;
     }
+  }
+
+  :root{
+    --text-colour: black;
+    --bkg-colour: white;
+    --text-colour-gray: gray;
+  }
+
+  .dark-mode{
+    --text-colour: white;
+    --bkg-colour: black;
+
+    --text-colour-gray: gray;
+  }
