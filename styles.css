@@ -239,6 +239,12 @@
         margin-right: 5%;
     }
 
+    .company img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+
   }
   
   /* Tablet Styles */
@@ -262,6 +268,7 @@
     }    
 
     .company img {
+      width: 50px;
       height: 50px;
       margin-right: 10px;
   }
@@ -302,9 +309,11 @@
       /* background-color: #B2D6FF; */
     }
 
-    .company img {
+    .img-plus-text img {
+        width: 50px;
         height: 50px;
         margin-right: 10px;
+        
     }
 
     .text-intro-mobile{
