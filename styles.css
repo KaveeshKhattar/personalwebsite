@@ -45,6 +45,10 @@
     margin: 0 auto;
   }
 
+  .duration {
+    padding: 2%;
+  }
+
   .header{
     /* border: 10px solid yellow; */
     display: flex;
@@ -65,13 +69,13 @@
     font-style: italic;
   } */
 
-  .text-intro button{
+  /* .text-intro button{
     padding: 5px;
     margin-top: -10px;
     border: 2px solid var(--text-colour);
     border-radius: 10%;
     color: var(--text-colour);
-  }
+  } */
 
   .text-intro-mobile button{
     padding: 5px;
@@ -89,6 +93,10 @@
 
   .socials img{    
     margin-right: 10px;
+  }
+
+  button img {
+    height: 23px;
   }
   
   .experiences{

@@ -38,3 +38,8 @@ function openPDF() {
     var pdfURL = "pdfs/Resume.pdf";
     window.open(pdfURL, "_blank");
   }
+
+  function openPaper() {
+    var pdfURL = "pdfs/researchpaper.pdf";
+    window.open(pdfURL, "_blank");
+  }
