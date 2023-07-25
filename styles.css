@@ -77,14 +77,14 @@
     color: var(--text-colour);
   } */
 
-  .text-intro-mobile button{
+/*  .text-intro-mobile button{
     padding: 5px;
     margin-top: -10px;
     border: 2px solid var(--text-colour);
     border-radius: 10%;
     color: var(--text-colour);
   }
-
+*/
   .socials{
     display: flex;
     padding-top: 10%;    
