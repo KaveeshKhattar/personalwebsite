@@ -249,6 +249,9 @@
       height: 50px;
       margin-right: 10px;
   }
+  .duration {
+    padding: 1em;    
+  }
 
   }
   
@@ -286,6 +289,10 @@
     
       .socials img{    
         margin-right: 10px;
+      }
+
+      .duration {
+        padding: 1em;    
       }
 
     .experiences{        
