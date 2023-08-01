@@ -46,7 +46,8 @@
   }
 
   .duration {
-    padding: 2%;
+    padding: 1em;    
+    font-size: small;    
   }
 
   .header{
@@ -155,10 +156,6 @@
   .info-company{
     /* border: 2px solid black; */
     margin-left: 5px;
-  }
-
-  .duration{
-    font-size: small;
   }
   
   .projects > h3{
