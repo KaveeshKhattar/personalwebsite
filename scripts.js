@@ -39,7 +39,12 @@ function openPDF() {
     window.open(pdfURL, "_blank");
   }
 
-  function openPaper() {
-    var pdfURL = "pdfs/researchpaper.pdf";
+  function openPaper1() {
+    var pdfURL = "pdfs/researchpaper1.pdf";
+    window.open(pdfURL, "_blank");
+  }
+
+  function openPaper2() {
+    var pdfURL = "pdfs/researchpaper2.pdf";
     window.open(pdfURL, "_blank");
   }

@@ -141,6 +141,8 @@
 
   .companyRole{
     font-size: large;
+    max-width:300px;
+    word-wrap:break-word;
   }
 
   .companyName{
