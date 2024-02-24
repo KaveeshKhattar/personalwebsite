@@ -9,7 +9,7 @@
     color: var(--text-colour);
   }  
 
-  .header, .experiences, .projects, .education, .text-intro-mobile{
+  .header, .experiences, .publications, .projects, .education, .text-intro-mobile{
     animation: slide 2s;
   }
   
@@ -160,11 +160,11 @@
     margin-left: 5px;
   }
   
-  .projects > h3{
+  .publications > h3, .projects > h3{
     color: gray;
   }
 
-  .projects{
+  .publications, .projects{
     /* border: 2px solid black; */
     margin-bottom: 6%;
   }
@@ -236,7 +236,7 @@
       font-size: small;
     }
 
-    .projects{        
+    .publications, .projects{        
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -303,7 +303,7 @@
         margin-right: 5%;
     }
 
-    .projects{        
+    .publications, .projects{        
         margin-left: 5%;
         margin-right: 5%;
     }
